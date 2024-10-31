@@ -1,3 +1,4 @@
+import CustomerComponent from './components/CustomerComponent'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
 import ListCustomerComponent from './components/ListCustomerComponent'
@@ -11,6 +12,8 @@ function App() {
       <Routes>
         <Route path='/' element={<ListCustomerComponent />} />
         <Route path='/customers' element={<ListCustomerComponent />} />
+        <Route path='/add-customer' element={<CustomerComponent />} />
+        <Route path='/edit-customer/:id' element={<CustomerComponent />} />
       </Routes>
       <FooterComponent />
     </BrowserRouter>
